@@ -35,22 +35,47 @@ public class CustomerService {
 //		   Integer id;
 		Customer c = new Customer();
 		String name = KeyboardUtil.getString("Enter full name: ");
-		c.setName(name);
+		if(!(name.isEmpty())) {
+			c.setName(name);
+		}
+		
 		String email = KeyboardUtil.getString("Enter email: ");
+		if(!(email.isEmpty())) {
+			
+		}
 		c.setEmail(email);
 		String password = KeyboardUtil.getString("Enter password: ");
+		if(!(password.isEmpty())) {
+			
+		}
 		c.setPassword(password);
 		String street = KeyboardUtil.getString("Enter street: ");
+		if(!(street.isEmpty())) {
+			
+		}
 		c.setStreet(street);
 		String city = KeyboardUtil.getString("Enter city: ");
+		if(!(city.isEmpty())) {
+			
+		}
 		c.setCity(city);
 		String state = KeyboardUtil.getString("Enter state: ");
+		if(!(state.isEmpty())) {
+			
+		}
 		c.setState(state);
 		String pincode = KeyboardUtil.getString("Enter pincode: ");
+		if(!(pincode.isEmpty())) {
+			
+		}
 		c.setPincode(pincode);
 		String country = KeyboardUtil.getString("Enter country: ");
+		if(!country.isEmpty()) {
+			
+		}
 		c.setCountry(country);
 		double balance = KeyboardUtil.getDouble("Enter balance: ");
+	
 		c.setBalance(balance);
 		try {
 			dao.addNewCustomer(c);
