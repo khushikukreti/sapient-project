@@ -4,6 +4,7 @@ import java.awt.RenderingHints.Key;
 
 import com.sapient.flixme.entity.Customer;
 import com.sapient.flixme.service.CustomerService;
+import com.sapient.flixme.service.ServiceException;
 import com.sapinet.flixme.util.KeyboardUtil;
 
 import lombok.extern.slf4j.Slf4j;
@@ -12,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 public class App {
 
 	CustomerService customerService = new CustomerService();
+	Customer loggedInCustoner=null;
 
 	public void start() {
 		System.out.println("Welcome to Flixme review/rating system");
@@ -22,7 +24,11 @@ public class App {
 				acceptAndLogin();
 				break;
 			case 2:
-				System.out.println("Registration module not ready yet! ");
+				try {
+					customerService.selfRegistration();
+				} catch (ServiceException e) {
+					log.warn("Exeption while calling selfRegistration",e);
+				}
 				break;
 
 			default:
@@ -38,23 +44,27 @@ public class App {
 			String email = KeyboardUtil.getString("Enter email: ");
 			String password = KeyboardUtil.getString("Enter password: ");
 
-			Customer c1 = customerService.login(email, password);
+			loggedInCustoner = customerService.login(email, password);
 			int choice;
-			
-			while((choice=customerMenu(c1))!=0) {
-				switch(choice) {
+
+			while ((choice = customerMenu()) != 0) {
+				switch (choice) {
 				case 1:
-					case 2:
-						case 3:
-							case 4:
-								case 5:
-									case 6:
-										case 7:
-											case 8:
-												
+				case 2:
+				case 3:
+				case 4:
+				case 5:
+				case 6:
+				case 7:
+				case 8:
+					System.out.println("Registration module not ready yet!");
+					break;
+				default:
+					System.out.println("Invalid choice. Please retry.");
+
 				}
 			}
-		
+
 		} catch (Exception ex) {
 			log.warn("Exception while calling acceptAndLogin", ex);
 			System.out.println("Couldn't logini");
@@ -79,9 +89,9 @@ public class App {
 
 	}
 
-	int customerMenu(Customer customer) {
+	int customerMenu() {
 		System.out.println("Login succeede");
-		System.out.println("Welcome " + customer.getName());
+		System.out.println("Welcome " + loggedInCustoner.getName());
 		try {
 			System.out.println("1. View profile");
 			System.out.println("2. Edit profile");
