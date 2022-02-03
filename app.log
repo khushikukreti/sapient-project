@@ -1,0 +1,10 @@
+[ WARN] 2022-02-03 21:10:52,695 main            com.sapinet.flixme.App [  23] Error while accepting choice for mainMenu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapinet.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapinet.flixme.App.mainMenu(App.java:21)
+	at com.sapinet.flixme.App.start(App.java:12)
+	at com.sapinet.flixme.App.main(App.java:29)
