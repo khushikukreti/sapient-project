@@ -8,3 +8,19 @@ java.util.InputMismatchException
 	at com.sapinet.flixme.App.mainMenu(App.java:21)
 	at com.sapinet.flixme.App.start(App.java:12)
 	at com.sapinet.flixme.App.main(App.java:29)
+[ WARN] 2022-02-04 11:50:42,067 main            com.sapinet.flixme.App [  86] Error while accepting choice for mainMenu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapinet.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapinet.flixme.App.mainMenu(App.java:82)
+	at com.sapinet.flixme.App.start(App.java:21)
+	at com.sapinet.flixme.App.main(App.java:116)
+[ WARN] 2022-02-04 11:50:58,829 main            com.sapinet.flixme.App [  69] Exception while calling acceptAndLogin
+com.sapient.flixme.service.ServiceException: Invalid email/password
+	at com.sapient.flixme.service.CustomerService.login(CustomerService.java:20)
+	at com.sapinet.flixme.App.acceptAndLogin(App.java:47)
+	at com.sapinet.flixme.App.start(App.java:24)
+	at com.sapinet.flixme.App.main(App.java:116)
