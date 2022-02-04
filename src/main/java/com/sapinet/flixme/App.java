@@ -48,7 +48,7 @@ public class App {
 	void adminLogin() {
 		try {
 			String email = KeyboardUtil.getString("Enter email: ");
-			String password = KeyboardUtil.getString("Enter password: ");
+			String password = KeyboardUtil.getPassword("Enter password: ");
 
 			loggedInAdmin = adminService.login(email, password);
 			int choice;
@@ -81,7 +81,7 @@ public class App {
 	void acceptAndLogin() {
 		try {
 			String email = KeyboardUtil.getString("Enter email: ");
-			String password = KeyboardUtil.getString("Enter password: ");
+			String password = KeyboardUtil.getPassword("Enter password: ");
 
 			loggedInCustoner = customerService.login(email, password);
 			int choice;

@@ -44,7 +44,7 @@ public class CustomerService {
 			
 		}
 		c.setEmail(email);
-		String password = KeyboardUtil.getString("Enter password: ");
+		String password = KeyboardUtil.getPassword("Enter password: ");
 		if(!(password.isEmpty())) {
 			
 		}
