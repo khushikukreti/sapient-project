@@ -1,5 +1,6 @@
 package com.sapient.flixme.dao;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -63,8 +64,12 @@ public class CustomerDaoHashMapImpl implements CustomerDao {
 
 	@Override
 	public List<Customer> findAll() throws DaoException {
-
-		return null;
+		// for (Map.Entry m : data.entrySet()) {
+		// 	System.out.println(m.getKey() + " "
+		// 			+ m.getValue());
+		// }
+		 List<Customer> list = new ArrayList<Customer>(data.values());
+		 return list;
 	}
 
 	@Override

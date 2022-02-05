@@ -8,11 +8,12 @@ public class Customer {
  private String name;
  private String email;
  private String password;
- private String street;
- private String city;
- private String state;
- private String pincode;
- private String country;
- private double balance;
+ private String street = " ";
+ private String city = " ";
+ private String state = " ";
+ private String pincode = " ";
+ private String country = " ";
+ private double balance ;
+
  
 }

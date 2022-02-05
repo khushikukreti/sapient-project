@@ -1,4 +1,4 @@
-package com.sapinet.flixme.util;
+package com.sapient.flixme.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

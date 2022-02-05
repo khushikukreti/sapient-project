@@ -8,3 +8,173 @@ java.util.InputMismatchException
 	at com.sapinet.flixme.App.mainMenu(App.java:21)
 	at com.sapinet.flixme.App.start(App.java:12)
 	at com.sapinet.flixme.App.main(App.java:29)
+[ WARN] 2022-02-05 00:23:16,334 main            com.sapient.App [  70] Exception while calling acceptAndLogin
+com.sapient.flixme.service.ServiceException: Invalid email/password
+	at com.sapient.flixme.service.CustomerService.login(CustomerService.java:20)
+	at com.sapient.App.acceptAndLogin(App.java:47)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:117)
+[ WARN] 2022-02-05 00:23:53,582 main            com.sapient.App [  87] Error while accepting choice for mainMenu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.mainMenu(App.java:83)
+	at com.sapient.App.start(App.java:21)
+	at com.sapient.App.main(App.java:117)
+[ WARN] 2022-02-05 00:23:57,155 main            com.sapient.App [  87] Error while accepting choice for mainMenu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.mainMenu(App.java:83)
+	at com.sapient.App.start(App.java:21)
+	at com.sapient.App.main(App.java:117)
+[ WARN] 2022-02-05 00:26:27,206 main            com.sapient.App [ 110] There was an error while accepting choice for main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.customerMenu(App.java:107)
+	at com.sapient.App.acceptAndLogin(App.java:50)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:117)
+[ WARN] 2022-02-05 00:26:43,967 main            com.sapient.App [ 110] There was an error while accepting choice for main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.customerMenu(App.java:107)
+	at com.sapient.App.acceptAndLogin(App.java:50)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:117)
+[ WARN] 2022-02-05 00:29:43,792 main            com.sapient.App [ 111] There was an error while accepting choice for main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.customerMenu(App.java:108)
+	at com.sapient.App.acceptAndLogin(App.java:50)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:118)
+[ WARN] 2022-02-05 00:31:21,691 main            com.sapient.App [ 116] There was an error while accepting choice for main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.customerMenu(App.java:113)
+	at com.sapient.App.acceptAndLogin(App.java:55)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:123)
+[ WARN] 2022-02-05 00:34:17,843 main            com.sapient.App [  73] Exception while calling acceptAndLogin
+com.sapient.flixme.service.ServiceException: Invalid email/password
+	at com.sapient.flixme.service.CustomerService.login(CustomerService.java:20)
+	at com.sapient.App.acceptAndLogin(App.java:49)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:120)
+[ WARN] 2022-02-05 00:47:26,693 main            com.sapient.App [  73] Exception while calling acceptAndLogin
+java.lang.NullPointerException
+	at com.sapient.flixme.service.CustomerService.myProfile(CustomerService.java:96)
+	at com.sapient.App.acceptAndLogin(App.java:55)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:120)
+[ WARN] 2022-02-05 00:51:07,340 main            com.sapient.App [  73] Exception while calling acceptAndLogin
+com.sapient.flixme.service.ServiceException: Invalid email/password
+	at com.sapient.flixme.service.CustomerService.login(CustomerService.java:25)
+	at com.sapient.App.acceptAndLogin(App.java:49)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:120)
+[ WARN] 2022-02-05 00:51:14,611 main            com.sapient.App [  90] Error while accepting choice for mainMenu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.mainMenu(App.java:86)
+	at com.sapient.App.start(App.java:21)
+	at com.sapient.App.main(App.java:120)
+[ WARN] 2022-02-05 00:51:27,229 main            com.sapient.App [  73] Exception while calling acceptAndLogin
+java.lang.NullPointerException
+	at com.sapient.flixme.service.CustomerService.myProfile(CustomerService.java:96)
+	at com.sapient.App.acceptAndLogin(App.java:55)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:120)
+[ WARN] 2022-02-05 09:58:58,660 main            com.sapient.App [  71] Exception while calling acceptAndLogin
+java.lang.NullPointerException
+	at com.sapient.flixme.service.CustomerService.myProfile(CustomerService.java:97)
+	at com.sapient.App.acceptAndLogin(App.java:53)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:118)
+[ WARN] 2022-02-05 10:04:47,575 main            com.sapient.App [ 111] There was an error while accepting choice for main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.customerMenu(App.java:108)
+	at com.sapient.App.acceptAndLogin(App.java:50)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:118)
+[ WARN] 2022-02-05 10:04:54,854 main            com.sapient.App [  88] Error while accepting choice for mainMenu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.mainMenu(App.java:84)
+	at com.sapient.App.start(App.java:21)
+	at com.sapient.App.main(App.java:118)
+[ WARN] 2022-02-05 10:05:20,870 main            com.sapient.App [  71] Exception while calling acceptAndLogin
+java.lang.NullPointerException
+	at com.sapient.flixme.service.CustomerService.myProfile(CustomerService.java:97)
+	at com.sapient.App.acceptAndLogin(App.java:53)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:118)
+[ WARN] 2022-02-05 10:51:37,383 main            com.sapient.App [ 111] There was an error while accepting choice for main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.App.customerMenu(App.java:108)
+	at com.sapient.App.acceptAndLogin(App.java:50)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:118)
+[ WARN] 2022-02-05 11:38:09,129 main            com.sapient.App [  74] Exception while calling acceptAndLogin
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.flixme.service.CustomerService.editProfile(CustomerService.java:147)
+	at com.sapient.App.acceptAndLogin(App.java:57)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:121)
+[ WARN] 2022-02-05 11:39:59,658 main            com.sapient.App [  74] Exception while calling acceptAndLogin
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapient.flixme.service.CustomerService.editProfile(CustomerService.java:147)
+	at com.sapient.App.acceptAndLogin(App.java:57)
+	at com.sapient.App.start(App.java:24)
+	at com.sapient.App.main(App.java:121)
