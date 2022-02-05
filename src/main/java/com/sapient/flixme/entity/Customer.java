@@ -13,7 +13,7 @@ public class Customer {
  private String state = " ";
  private String pincode = " ";
  private String country = " ";
- private double balance ;
+ private double balance =0;
 
  
 }

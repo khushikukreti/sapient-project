@@ -95,42 +95,9 @@ public class CustomerService {
 		System.out.println("Name: " + customer.getName());
 		System.out.println("Balance: " + customer.getBalance());
 		System.out.println("Email: " + customer.getEmail());
-		StringBuilder sb = new StringBuilder();
+		System.out.println("Address: " + customer.getStreet() + " " + customer.getState() + " " + customer.getCity()
+				+ " " + customer.getPincode() + " " + customer.getCountry());
 
-		try {
-			if (customer.getStreet().equals(null)) {
-				// sb.append("");
-			} else {
-				sb.append(" " + customer.getStreet());
-			}
-			if (customer.getState().equals(null)) {
-				// sb.append("");
-			} else {
-				sb.append(" " + customer.getState());
-			}
-
-			if (customer.getCity().equals(null)) {
-				// sb.append("");
-			} else {
-				sb.append(" " + customer.getCity());
-			}
-
-			if (customer.getPincode().equals(null)) {
-				// sb.append("");
-			} else {
-				sb.append(" " + customer.getPincode());
-			}
-
-			if (customer.getCountry().equals(null)) {
-				// sb.append("");
-			} else {
-				sb.append(" " + customer.getCountry());
-			}
-		} catch (Exception e) {
-			System.out.println("cant display address" + e);
-		}
-
-		System.out.println("Address: " + sb);
 
 	}
 
@@ -147,6 +114,8 @@ public class CustomerService {
 					changePassword(loggedInCustoner);
 					break;
 				case 3:
+					updateBalance(loggedInCustoner);
+					break;
 				case 4:
 					System.out.println("not ready yet");
 				default:
@@ -156,18 +125,24 @@ public class CustomerService {
 		}
 	}
 
+	private void updateBalance(Customer loggedInCustoner) {
+		System.out.println("Current Balance: " + loggedInCustoner.getBalance());
+
+	}
+
 	private void changePassword(Customer loggedInCustoner) {
 
 		String oldPassword = KeyboardUtil.getString("Enter old password: ");
-		if(oldPassword.equals(loggedInCustoner.getPassword())){
+		if (oldPassword.equals(loggedInCustoner.getPassword())) {
 			String newPassword = KeyboardUtil.getString("Enter new password");
-			String newPassword2= KeyboardUtil.getString("Confirm new password ");
-			if(newPassword.equals(newPassword2)){
+			String newPassword2 = KeyboardUtil.getString("Confirm new password ");
+			if (newPassword.equals(newPassword2)) {
 				loggedInCustoner.setPassword(newPassword);
-			}else{
+				System.out.println("Password changed successfully");
+			} else {
 				System.out.println("Password does not match");
 			}
-		}else{
+		} else {
 			System.out.println("Wrong password !! Enter right password to reset ");
 		}
 	}

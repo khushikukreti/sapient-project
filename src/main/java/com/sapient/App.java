@@ -53,7 +53,7 @@ public class App {
 					case 1:
 						customerService.myProfile(loggedInCustoner);
 						break;
-					case 2: 
+					case 2:
 						customerService.editProfile(loggedInCustoner);
 						break;
 					case 3:
@@ -95,7 +95,7 @@ public class App {
 	}
 
 	int customerMenu() {
-		
+
 		System.out.println("Welcome " + loggedInCustoner.getName());
 		try {
 			System.out.println("1. View profile");
