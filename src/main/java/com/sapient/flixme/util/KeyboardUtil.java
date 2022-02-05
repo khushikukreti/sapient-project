@@ -1,5 +1,6 @@
 package com.sapient.flixme.util;
 
+import java.io.Console;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.InputMismatchException;
@@ -8,6 +9,7 @@ import java.util.Scanner;
 public class KeyboardUtil {
 	
 	private KeyboardUtil() {}
+	static Console console = System.console();
 	
 	public static int getInt(String message) {
 		@SuppressWarnings("resource")
@@ -22,6 +24,12 @@ public class KeyboardUtil {
 		System.out.println(message);
 		return sc.nextLine();
 	}
+
+	public static String getPassword(String message) {
+		System.out.println(message);
+		return new String(console.readPassword());
+	}
+
 	public static double getDouble(String message) {
 		@SuppressWarnings("resource")
 		Scanner sc=new Scanner(System.in);

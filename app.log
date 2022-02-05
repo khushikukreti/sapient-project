@@ -8,6 +8,7 @@ java.util.InputMismatchException
 	at com.sapinet.flixme.App.mainMenu(App.java:21)
 	at com.sapinet.flixme.App.start(App.java:12)
 	at com.sapinet.flixme.App.main(App.java:29)
+<<<<<<< HEAD
 [ WARN] 2022-02-05 00:23:16,334 main            com.sapient.App [  70] Exception while calling acceptAndLogin
 com.sapient.flixme.service.ServiceException: Invalid email/password
 	at com.sapient.flixme.service.CustomerService.login(CustomerService.java:20)
@@ -25,11 +26,15 @@ java.util.InputMismatchException
 	at com.sapient.App.start(App.java:21)
 	at com.sapient.App.main(App.java:117)
 [ WARN] 2022-02-05 00:23:57,155 main            com.sapient.App [  87] Error while accepting choice for mainMenu
+=======
+[ WARN] 2022-02-04 11:50:42,067 main            com.sapinet.flixme.App [  86] Error while accepting choice for mainMenu
+>>>>>>> 00f560f2f72d3b7f36b6089bc06c158cdd0b887e
 java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
 	at java.base/java.util.Scanner.next(Scanner.java:1594)
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+<<<<<<< HEAD
 	at com.sapient.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
 	at com.sapient.App.mainMenu(App.java:83)
 	at com.sapient.App.start(App.java:21)
@@ -178,3 +183,15 @@ java.util.InputMismatchException
 	at com.sapient.App.acceptAndLogin(App.java:57)
 	at com.sapient.App.start(App.java:24)
 	at com.sapient.App.main(App.java:121)
+=======
+	at com.sapinet.flixme.util.KeyboardUtil.getInt(KeyboardUtil.java:16)
+	at com.sapinet.flixme.App.mainMenu(App.java:82)
+	at com.sapinet.flixme.App.start(App.java:21)
+	at com.sapinet.flixme.App.main(App.java:116)
+[ WARN] 2022-02-04 11:50:58,829 main            com.sapinet.flixme.App [  69] Exception while calling acceptAndLogin
+com.sapient.flixme.service.ServiceException: Invalid email/password
+	at com.sapient.flixme.service.CustomerService.login(CustomerService.java:20)
+	at com.sapinet.flixme.App.acceptAndLogin(App.java:47)
+	at com.sapinet.flixme.App.start(App.java:24)
+	at com.sapinet.flixme.App.main(App.java:116)
+>>>>>>> 00f560f2f72d3b7f36b6089bc06c158cdd0b887e

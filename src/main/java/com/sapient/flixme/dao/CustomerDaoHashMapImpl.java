@@ -64,18 +64,23 @@ public class CustomerDaoHashMapImpl implements CustomerDao {
 
 	@Override
 	public List<Customer> findAll() throws DaoException {
-		// for (Map.Entry m : data.entrySet()) {
-		// 	System.out.println(m.getKey() + " "
-		// 			+ m.getValue());
-		// }
-		 List<Customer> list = new ArrayList<Customer>(data.values());
-		 return list;
+		List<Customer> list = new ArrayList<>();
+        list.addAll(data.values());
+        return list;
 	}
 
 	@Override
 	public List<Customer> findByCity(String city) throws DaoException {
-
-		return null;
+		List<Customer> list = new ArrayList<>();
+        Collection<Customer> customers = data.values();
+        Iterator<Customer> it = customers.iterator();
+        while(it.hasNext()) {
+            Customer c = it.next();
+            if(c.getCity().equals(city)) {
+                list.add(c);
+            }
+        }
+        return list;
 	}
 
 }
